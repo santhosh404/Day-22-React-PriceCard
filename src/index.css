@@ -1,0 +1,11 @@
+body {
+  height: 100vh;
+  background-image: linear-gradient(to bottom, #0265e7, #31abfe);
+  background-repeat: no-repeat;
+}
+
+@media screen and (max-width: 992px) {
+  body {
+    height: 100%;
+  }
+}

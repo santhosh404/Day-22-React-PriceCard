@@ -1,0 +1,28 @@
+.card {
+    border-radius: 1rem !important;
+
+}
+
+.card-price {
+    font-size: 3rem;
+}
+
+.period {
+    font-size:  0.8rem;
+}
+
+.btn {
+    font-size: 80% !important;
+    border-radius: 5rem !important; 
+    letter-spacing: .1rem !important;
+    font-weight: 700 !important;
+    padding: 1rem !important;
+    opacity: .7 !important;
+    transition: all .2s !important;
+}
+
+.card:hover {
+    transform:translateY(-8px);
+    transition: all .5s;
+    cursor: pointer;
+}
