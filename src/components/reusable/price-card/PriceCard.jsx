@@ -3,7 +3,7 @@ import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
 import "./PriceCard.css"
 
-export default function PriceCard({ title, price, period, features }) {
+export default function PriceCard({ title, price, period, features, active }) {
     return (
         <>
             <div className='col-lg-4 mb-3'>
@@ -28,8 +28,7 @@ export default function PriceCard({ title, price, period, features }) {
                             }
                         </ul>
                         <div className='d-grid'>
-                            <button className='btn btn-primary text-uppercase'>Button</button>
-
+                            <button className={`btn btn-primary text-uppercase ${active && 'opacity-100'}`}>Button</button>
                         </div>
                     </Card.Body>
                 </Card>

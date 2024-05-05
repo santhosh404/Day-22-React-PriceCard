@@ -9,7 +9,8 @@ const priceDetails = [
         period: "month",
         features: {  available: ["Single User", "5GB Storage", "Unlimited Public Projects", "Community Access"], 
                         notAvailable: ["Unlimited Private Projects", "Dedicated Phone Support", "Free SubDomain", "Mothly Status Reports"]
-                }
+                },
+        active: false
     },
     {
         id: 2,
@@ -18,7 +19,9 @@ const priceDetails = [
         period: "month",
         features: {  available: ["Single User", "5GB Storage", "Unlimited Public Projects", "Community Access", "Unlimited Private Projects", "Dedicated Phone Support", "Free SubDomain"], 
                         notAvailable: ["Mothly Status Reports"]
-                }
+                },
+        active: false
+
     },
     {
         id: 3,
@@ -27,7 +30,9 @@ const priceDetails = [
         period: "month",
         features: { available: ["Single User", "5GB Storage", "Unlimited Public Projects", "Community Access", "Unlimited Private Projects", "Dedicated Phone Support", "Free SubDomain", "Mothly Status Reports"], 
                     notAvailable: []
-                }
+                },
+        active: true
+
     }
 ]
 
@@ -46,6 +51,7 @@ export default function PriceDetails() {
                             price = {d.price}
                             period = {d.period}
                             features = {d.features}
+                            active = {d.active}
                         />
                     ))
                 }
